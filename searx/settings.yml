@@ -262,10 +262,20 @@ categories_as_tabs:
   social media:
 
 engines:
+  - name: 9gag
+    engine: 9gag
+    shortcut: 9g
+    disabled: true
+
   - name: apk mirror
     engine: apkmirror
     timeout: 4.0
     shortcut: apkm
+    disabled: true
+
+  - name: apple app store
+    engine: apple_app_store
+    shortcut: aps
     disabled: true
 
   # Requires Tor
@@ -539,6 +549,12 @@ engines:
     shortcut: ddi
     timeout: 3.0
     disabled: true
+
+  - name: apple maps
+    engine: apple_maps
+    shortcut: apm
+    disabled: true
+    timeout: 5.0
 
   - name: emojipedia
     engine: emojipedia
