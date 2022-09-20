@@ -23,7 +23,7 @@ brand:
 search:
   # Filter results. 0: None, 1: Moderate, 2: Strict
   safe_search: 0
-  # Existing autocomplete backends: "dbpedia", "duckduckgo", "google",
+  # Existing autocomplete backends: "dbpedia", "duckduckgo", "google", "yandex",
   # "seznam", "startpage", "swisscows", "qwant", "wikipedia" - leave blank to turn it off
   # by default.
   autocomplete: ""
@@ -95,6 +95,8 @@ ui:
   default_theme: simple
   # center the results ?
   center_alignment: false
+  # URL prefix of the internet archive, don't forgett trailing slash (if needed).
+  # cache_url: "https://webcache.googleusercontent.com/search?q=cache:"
   # Default interface locale - leave blank to detect from browser information or
   # use codes from the 'locales' config section
   default_locale: ""
@@ -121,6 +123,7 @@ ui:
 #
 # result_proxy:
 #   url: http://127.0.0.1:3000/
+#   # the key is a base64 encoded string, the YAML !!binary prefix is optional
 #   key: !!binary "your_morty_proxy_key"
 #   # [true|false] enable the "proxy" button next to each result
 #   proxify_results: true
@@ -1683,6 +1686,15 @@ engines:
     engine: seznam
     disabled: true
 
+  # - name: deepl
+  #   engine: deepl
+  #   shortcut: dpl
+  #   # You can use the engine using the official stable API, but you need an API key
+  #   # See: https://www.deepl.com/pro-api?cta=header-pro-api
+  #   api_key: ''  # required!
+  #   timeout: 5.0
+  #   disabled: true
+
   - name: mojeek
     shortcut: mjk
     engine: xpath
@@ -1798,6 +1810,7 @@ engines:
     url_xpath: //div[@class="upper-synonyms"]/a/@href
     content_xpath: //div[@class="synonyms-list-group"]
     title_xpath: //div[@class="upper-synonyms"]/a
+    no_result_for_http_status: [404]
     about:
       website: https://www.woxikon.de/
       wikidata_id:  # No Wikidata ID
@@ -1851,6 +1864,9 @@ engines:
       month: 'pm'
       year: 'py'
     categories: [general, web]
+    disabled: true
+    headers:
+      Accept-Encoding: gzip, deflate
     about:
       website: https://brave.com/search/
       wikidata_id: Q107355971

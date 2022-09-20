@@ -5,21 +5,23 @@
 # Translators:
 # Jan Hovancik, 2017
 # Markus Heiser <markus.heiser@darmarit.de>, 2022.
+# Fero Novák <itzwowsmile@gmail.com>, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version:  searx\n"
+"Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-07-23 14:08+0000\n"
-"PO-Revision-Date: 2022-07-21 21:02+0000\n"
-"Last-Translator: Markus Heiser <markus.heiser@darmarit.de>\n"
+"POT-Creation-Date: 2022-09-04 09:33+0000\n"
+"PO-Revision-Date: 2022-09-16 07:30+0000\n"
+"Last-Translator: Fero Novák <itzwowsmile@gmail.com>\n"
+"Language-Team: Slovak <https://weblate.bubu1.eu/projects/searxng/searxng/sk/>"
+"\n"
 "Language: sk\n"
-"Language-Team: Slovak "
-"<https://weblate.bubu1.eu/projects/searxng/searxng/sk/>\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 "
-"&& n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
+">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+"X-Generator: Weblate 4.14\n"
 "Generated-By: Babel 2.10.3\n"
 
 #. CONSTANT_NAMES['DEFAULT_GROUP_NAME']
@@ -30,7 +32,7 @@ msgstr "iné"
 #. CONSTANT_NAMES['OTHER_CATEGORY']
 #: searx/searxng.msg
 msgid "other"
-msgstr "ostatne"
+msgstr "ostatné"
 
 #. CATEGORY_NAMES['FILES']
 #: searx/searxng.msg
@@ -65,7 +67,7 @@ msgstr "videá"
 #. CATEGORY_NAMES['IT']
 #: searx/searxng.msg
 msgid "it"
-msgstr "technika"
+msgstr "technológia"
 
 #. CATEGORY_NAMES['NEWS']
 #: searx/searxng.msg
@@ -75,7 +77,7 @@ msgstr "správy"
 #. CATEGORY_NAMES['MAP']
 #: searx/searxng.msg
 msgid "map"
-msgstr "mapy"
+msgstr "mapa"
 
 #. CATEGORY_NAMES['ONIONS']
 #: searx/searxng.msg
@@ -120,7 +122,7 @@ msgstr "repozitáre"
 #. CATEGORY_GROUPS['SOFTWARE_WIKIS']
 #: searx/searxng.msg
 msgid "software wikis"
-msgstr "Dokumentácia aplikácií"
+msgstr "Dokumentácie aplikácií"
 
 #. CATEGORY_GROUPS['WEB']
 #: searx/searxng.msg
@@ -168,7 +170,7 @@ msgstr "HTTP chyba"
 
 #: searx/webapp.py:178
 msgid "HTTP connection error"
-msgstr "chyba pripojenie cez HTTP"
+msgstr "chyba pripojenia cez HTTP"
 
 #: searx/webapp.py:184
 msgid "proxy error"
@@ -194,7 +196,7 @@ msgstr "API chyba servera"
 msgid "No item found"
 msgstr "Nič sa nenašlo"
 
-#: searx/engines/qwant.py:212
+#: searx/engines/qwant.py:217
 #: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:365
 msgid "Source"
 msgstr "Zdroj"
@@ -203,27 +205,27 @@ msgstr "Zdroj"
 msgid "Error loading the next page"
 msgstr "Chyba pri načítaní ďalšej stránky"
 
-#: searx/webapp.py:516 searx/webapp.py:960
+#: searx/webapp.py:518 searx/webapp.py:962
 msgid "Invalid settings, please edit your preferences"
 msgstr "Nesprávne nastavenia, prosím upravte svoje predvoľby"
 
-#: searx/webapp.py:532
+#: searx/webapp.py:534
 msgid "Invalid settings"
 msgstr "Nesprávne nastavenia"
 
-#: searx/webapp.py:609 searx/webapp.py:685
+#: searx/webapp.py:611 searx/webapp.py:687
 msgid "search error"
 msgstr "chyba vyhľadávania"
 
-#: searx/webapp.py:731
+#: searx/webapp.py:733
 msgid "{minutes} minute(s) ago"
 msgstr "pred {minutes} min."
 
-#: searx/webapp.py:733
+#: searx/webapp.py:735
 msgid "{hours} hour(s), {minutes} minute(s) ago"
 msgstr "pred {hours} hod., {minutes} min."
 
-#: searx/webapp.py:859
+#: searx/webapp.py:861
 msgid "Suspended"
 msgstr "Pozastavené"
 
@@ -259,7 +261,7 @@ msgstr "Táto položka bola nahradená"
 msgid "No abstract is available for this publication."
 msgstr "Pre túto publikáciu nie je dostupný žiadny abstrakt."
 
-#: searx/engines/qwant.py:214
+#: searx/engines/qwant.py:219
 msgid "Channel"
 msgstr "Kanál"
 
@@ -269,16 +271,21 @@ msgid ""
 "format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
 " WebP."
 msgstr ""
+"Danú webovú adresu obrázka sa nepodarilo načítať. Môže to byť spôsobené "
+"nepodporovaným formátom súboru. TinEye podporuje iba obrázky JPEG, PNG, GIF, "
+"BMP, TIFF alebo WebP."
 
 #: searx/engines/tineye.py:46
 msgid ""
 "The image is too simple to find matches. TinEye requires a basic level of"
 " visual detail to successfully identify matches."
 msgstr ""
+"Obrázok je príliš nízkej kvality na to aby sa našla zhoda. TinEye vyžaduje "
+"vyššiu kvalitu detailov v obrázku na identifikáciu zhôd."
 
 #: searx/engines/tineye.py:52
 msgid "The image could not be downloaded."
-msgstr ""
+msgstr "Obrázok nemohol byť stiahnutý."
 
 #: searx/plugins/hash_plugin.py:24
 msgid "Converts strings to different hash digests."
@@ -350,11 +357,11 @@ msgstr ""
 
 #: searx/plugins/tor_check.py:78
 msgid "You are using TOR. Your IP address seems to be: {ip_address}."
-msgstr ""
+msgstr "Používate TOR. Zdá sa, že vaša IP adresa je: {ip_address}."
 
 #: searx/plugins/tor_check.py:84
 msgid "You are not using TOR. Your IP address seems to be: {ip_address}."
-msgstr ""
+msgstr "Nepoužívate TOR. Zdá sa, že vaša IP adresa je: {ip_address}."
 
 #: searx/plugins/tracker_url_remover.py:29
 msgid "Tracker URL remover"
@@ -489,17 +496,17 @@ msgid "View error logs and submit a bug report"
 msgstr "Zobraziť záznamy chýb a odoslať hlásenie o chybe"
 
 #: searx/templates/simple/preferences.html:53
-#: searx/templates/simple/stats.html:67
+#: searx/templates/simple/stats.html:64
 msgid "Median"
 msgstr "Medián"
 
 #: searx/templates/simple/preferences.html:54
-#: searx/templates/simple/stats.html:73
+#: searx/templates/simple/stats.html:70
 msgid "P80"
 msgstr "P80"
 
 #: searx/templates/simple/preferences.html:55
-#: searx/templates/simple/stats.html:79
+#: searx/templates/simple/stats.html:76
 msgid "P95"
 msgstr "P95"
 
@@ -924,67 +931,63 @@ msgstr ""
 msgid "Result count"
 msgstr ""
 
-#: searx/templates/simple/stats.html:38
-msgid "Scores per result"
-msgstr ""
-
-#: searx/templates/simple/stats.html:62
+#: searx/templates/simple/stats.html:59
 msgid "Total"
 msgstr ""
 
-#: searx/templates/simple/stats.html:63
+#: searx/templates/simple/stats.html:60
 msgid "HTTP"
 msgstr ""
 
-#: searx/templates/simple/stats.html:64
+#: searx/templates/simple/stats.html:61
 msgid "Processing"
 msgstr ""
 
-#: searx/templates/simple/stats.html:102
+#: searx/templates/simple/stats.html:99
 msgid "Warnings"
 msgstr ""
 
-#: searx/templates/simple/stats.html:102
+#: searx/templates/simple/stats.html:99
 msgid "Errors and exceptions"
 msgstr ""
 
-#: searx/templates/simple/stats.html:108
+#: searx/templates/simple/stats.html:105
 msgid "Exception"
 msgstr ""
 
-#: searx/templates/simple/stats.html:110
+#: searx/templates/simple/stats.html:107
 msgid "Message"
 msgstr ""
 
-#: searx/templates/simple/stats.html:112
+#: searx/templates/simple/stats.html:109
 msgid "Percentage"
 msgstr ""
 
-#: searx/templates/simple/stats.html:114
+#: searx/templates/simple/stats.html:111
 msgid "Parameter"
 msgstr ""
 
-#: searx/templates/simple/stats.html:122
+#: searx/templates/simple/stats.html:119
 msgid "Filename"
 msgstr ""
 
-#: searx/templates/simple/stats.html:123
+#: searx/templates/simple/stats.html:120
 msgid "Function"
 msgstr ""
 
-#: searx/templates/simple/stats.html:124
+#: searx/templates/simple/stats.html:121
 msgid "Code"
 msgstr ""
 
-#: searx/templates/simple/stats.html:131
+#: searx/templates/simple/stats.html:128
 msgid "Checker"
 msgstr ""
 
-#: searx/templates/simple/stats.html:134
+#: searx/templates/simple/stats.html:131
 msgid "Failed test"
 msgstr ""
 
-#: searx/templates/simple/stats.html:135
+#: searx/templates/simple/stats.html:132
 msgid "Comment(s)"
 msgstr ""
 
@@ -1369,3 +1372,5 @@ msgstr "skryť video"
 #~ msgid "preferences"
 #~ msgstr "nastavenia"
 
+#~ msgid "Scores per result"
+#~ msgstr ""

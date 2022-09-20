@@ -1,8 +1,8 @@
 mock==4.0.3
 nose2[coverage_plugin]==0.12.0
 cov-core==1.15.0
-black==22.6.0
-pylint==2.14.5
+black==22.8.0
+pylint==2.15.0
 splinter==0.18.1
 selenium==4.4.3
 twine==4.0.1
@@ -17,6 +17,6 @@ sphinx-notfound-page==0.8.3
 myst-parser==0.18.0
 linuxdoc==20211220
 aiounittest==1.4.2
-yamllint==1.27.1
+yamllint==1.28.0
 wlc==1.13
 coloredlogs==15.0.1
