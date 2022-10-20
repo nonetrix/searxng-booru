@@ -8,21 +8,23 @@
 # d506c013dc1b502e7a53f91ebcbf8f29_985b4b3, 2017-2018
 # Markus Heiser <markus.heiser@darmarit.de>, 2022.
 # ken kailer <kenkailer@yahoo.com>, 2022.
+# George Kashkosh <kash.george@gmail.com>, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version:  searx\n"
+"Project-Id-Version: searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-04 09:33+0000\n"
-"PO-Revision-Date: 2022-09-02 07:25+0000\n"
-"Last-Translator: Markus Heiser <markus.heiser@darmarit.de>\n"
+"POT-Creation-Date: 2022-09-28 07:29+0000\n"
+"PO-Revision-Date: 2022-10-07 07:30+0000\n"
+"Last-Translator: George Kashkosh <kash.george@gmail.com>\n"
+"Language-Team: Arabic <https://weblate.bubu1.eu/projects/searxng/searxng/ar/>"
+"\n"
 "Language: ar\n"
-"Language-Team: Arabic "
-"<https://weblate.bubu1.eu/projects/searxng/searxng/ar/>\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
-"n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.14.1\n"
 "Generated-By: Babel 2.10.3\n"
 
 #. CONSTANT_NAMES['DEFAULT_GROUP_NAME']
@@ -130,6 +132,11 @@ msgstr "الموسوعات التشاركية للبرنامج"
 msgid "web"
 msgstr "الشبكة العالمية"
 
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: searx/searxng.msg
+msgid "scientific publications"
+msgstr "المنشورات العلمية"
+
 #. STYLE_NAMES['AUTO']
 #: searx/searxng.msg
 msgid "auto"
@@ -145,68 +152,68 @@ msgstr "فاتح"
 msgid "dark"
 msgstr "مظلم"
 
-#: searx/webapp.py:165
+#: searx/webapp.py:164
 msgid "timeout"
 msgstr "نفذ الوقت"
 
-#: searx/webapp.py:166
+#: searx/webapp.py:165
 msgid "parsing error"
 msgstr "خطأ تحليل"
 
-#: searx/webapp.py:167
+#: searx/webapp.py:166
 msgid "HTTP protocol error"
 msgstr "خطأ في بروتوكول HTTP"
 
-#: searx/webapp.py:168
+#: searx/webapp.py:167
 msgid "network error"
 msgstr "خطأ في الشبكة"
 
-#: searx/webapp.py:170
+#: searx/webapp.py:169
 msgid "unexpected crash"
 msgstr "تعطل غير متوقع"
 
-#: searx/webapp.py:177
+#: searx/webapp.py:176
 msgid "HTTP error"
 msgstr "خطأ HTTP"
 
-#: searx/webapp.py:178
+#: searx/webapp.py:177
 msgid "HTTP connection error"
 msgstr "خطأ في اتصال HTTP"
 
-#: searx/webapp.py:184
+#: searx/webapp.py:183
 msgid "proxy error"
 msgstr "خطأ في وكيل البروكسي"
 
-#: searx/webapp.py:185
+#: searx/webapp.py:184
 msgid "CAPTCHA"
 msgstr "أسئلة التحقق"
 
-#: searx/webapp.py:186
+#: searx/webapp.py:185
 msgid "too many requests"
 msgstr "الكثير من الطلبات"
 
-#: searx/webapp.py:187
+#: searx/webapp.py:186
 msgid "access denied"
 msgstr "الدخول مرفوض"
 
-#: searx/webapp.py:188
+#: searx/webapp.py:187
 msgid "server API error"
 msgstr "خطأ في API الخادم"
 
-#: searx/webapp.py:363
+#: searx/webapp.py:362
 msgid "No item found"
 msgstr "تعذر العثور على عناصر"
 
 #: searx/engines/qwant.py:217
-#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:365
+#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:364
 msgid "Source"
 msgstr "المصدر"
 
-#: searx/webapp.py:367
+#: searx/webapp.py:366
 msgid "Error loading the next page"
 msgstr "حدث خلل أثناء تحميل الصفحة التالية"
 
-#: searx/webapp.py:518 searx/webapp.py:962
+#: searx/webapp.py:518 searx/webapp.py:950
 msgid "Invalid settings, please edit your preferences"
 msgstr "إنّ الإعدادات خاطئة، يرجى تعديل خياراتك"
 
@@ -218,17 +225,17 @@ msgstr "إعدادات غير صالحة"
 msgid "search error"
 msgstr "خطأ في البحث"
 
-#: searx/webapp.py:733
+#: searx/webapp.py:849
+msgid "Suspended"
+msgstr "معلق"
+
+#: searx/webutils.py:161
 msgid "{minutes} minute(s) ago"
 msgstr "قبل دقائق"
 
-#: searx/webapp.py:735
+#: searx/webutils.py:162
 msgid "{hours} hour(s), {minutes} minute(s) ago"
 msgstr "قبل {hours} ساعات، {minutes} دقائق"
-
-#: searx/webapp.py:861
-msgid "Suspended"
-msgstr "معلق"
 
 #: searx/answerers/random/answerer.py:67
 msgid "Random value generator"
@@ -258,13 +265,17 @@ msgstr "{title} (قديما)"
 msgid "This entry has been superseded by"
 msgstr "هذا الإدخال تم استبداله بـ"
 
-#: searx/engines/pubmed.py:78
-msgid "No abstract is available for this publication."
-msgstr "لا يوجد ملخص متاح لهذا المنشور."
-
 #: searx/engines/qwant.py:219
 msgid "Channel"
 msgstr "القناة"
+
+#: searx/engines/semantic_scholar.py:81
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
+"{numCitation}استجلاب من العام {firstCitationVelocityYear} إلى "
+"{lastCitationVelocityYear}"
 
 #: searx/engines/tineye.py:40
 msgid ""
@@ -286,6 +297,22 @@ msgstr ""
 #: searx/engines/tineye.py:52
 msgid "The image could not be downloaded."
 msgstr "لا يمكن تنزيل الصورة."
+
+#: searx/engines/wttr.py:101
+msgid "Morning"
+msgstr "صباحا"
+
+#: searx/engines/wttr.py:101
+msgid "Noon"
+msgstr "ظهيرة"
+
+#: searx/engines/wttr.py:101
+msgid "Evening"
+msgstr "مساء"
+
+#: searx/engines/wttr.py:101
+msgid "Night"
+msgstr "ليلا"
 
 #: searx/plugins/hash_plugin.py:24
 msgid "Converts strings to different hash digests."
@@ -328,8 +355,8 @@ msgstr ""
 "ضروريه)"
 
 #: searx/plugins/self_info.py:20
-msgid "Self Informations"
-msgstr "معلومات شخصية"
+msgid "Self Information"
+msgstr "نشرة المعلومات"
 
 #: searx/plugins/self_info.py:21
 msgid ""
@@ -421,16 +448,16 @@ msgid "Powered by"
 msgstr "مدعوم بواسطة"
 
 #: searx/templates/simple/base.html:64
-msgid "a privacy-respecting, hackable metasearch engine"
-msgstr "محرك بحث يحمي الخصوصية و قابل للتهكير"
+msgid "a privacy-respecting, open metasearch engine"
+msgstr "الخصوصية ذو الاعتبار, محرك البحث عميق عُموميا"
 
 #: searx/templates/simple/base.html:65
 msgid "Source code"
-msgstr "الكود المصدري"
+msgstr "شيفرة مصدرية"
 
 #: searx/templates/simple/base.html:66
 msgid "Issue tracker"
-msgstr "متتبع القضايا"
+msgstr "تعقب القضايا"
 
 #: searx/templates/simple/base.html:67 searx/templates/simple/stats.html:18
 msgid "Engine stats"
@@ -439,7 +466,7 @@ msgstr "إحصائيات المحرك"
 #: searx/templates/simple/base.html:69
 #: searx/templates/simple/messages/no_results.html:15
 msgid "Public instances"
-msgstr "مثيلات الخوادم العمومية"
+msgstr "نماذج الخوادم العمومية"
 
 #: searx/templates/simple/base.html:72
 msgid "Privacy policy"
@@ -447,11 +474,11 @@ msgstr "سياسة الخصوصية"
 
 #: searx/templates/simple/base.html:75
 msgid "Contact instance maintainer"
-msgstr "الإتصال بالمشرف على مثيل الخادم"
+msgstr "اتصال بالمشرف المخدم النموذجي"
 
 #: searx/templates/simple/categories.html:24
 msgid "Click on the magnifier to perform search"
-msgstr "انقر على المكبرة للقيام بالبحث"
+msgstr "انقر على رمز المكبر للقيام بالبحث"
 
 #: searx/templates/simple/macros.html:36
 msgid "Length"
@@ -459,6 +486,7 @@ msgstr "الطول"
 
 #: searx/templates/simple/macros.html:37
 #: searx/templates/simple/result_templates/images.html:18
+#: searx/templates/simple/result_templates/paper.html:6
 msgid "Author"
 msgstr "الكاتب"
 
@@ -468,7 +496,7 @@ msgstr "النسخة المخبأة"
 
 #: searx/templates/simple/macros.html:45
 msgid "proxied"
-msgstr "النفاذ عبر البروكسي"
+msgstr "المخدم البروكسي"
 
 #: searx/templates/simple/new_issue.html:64
 msgid "Start submiting a new issue on GitHub"
@@ -676,13 +704,10 @@ msgstr "أسلوب HTTP"
 
 #: searx/templates/simple/preferences.html:264
 msgid ""
-"Change how forms are submited, <a "
+"Change how forms are submitted, <a "
 "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
 " rel=\"external\">learn more about request methods</a>"
 msgstr ""
-"تغيير طريقة إرسال النماذج ، <a "
-"href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
-" rel=\"external\"> تعرف على المزيد حول طرق الطلب </a>"
 
 #: searx/templates/simple/preferences.html:269
 msgid "Image proxy"
@@ -727,6 +752,8 @@ msgid ""
 "This tab does not show up for search results, but you can search the "
 "engines listed here via bangs."
 msgstr ""
+"لا تظهر علامة التبويب هذه في نتائج البحث ، ولكن يمكنك البحث في المحركات "
+"المدرجة هنا عبر bangs."
 
 #: searx/templates/simple/preferences.html:307
 #: searx/templates/simple/preferences.html:358
@@ -1092,6 +1119,50 @@ msgstr "عرض الخريطة"
 msgid "hide map"
 msgstr "إخفاء الخريطة"
 
+#: searx/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr ""
+
 #: searx/templates/simple/result_templates/torrent.html:6
 msgid "magnet link"
 msgstr "رابط ماغنت"
@@ -1389,3 +1460,22 @@ msgstr "إخفاء الفيديو"
 #~ msgid "Scores per result"
 #~ msgstr "درجات لكل نتيجة"
 
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "محرك بحث يحمي الخصوصية و قابل للتهكير"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr "لا يوجد ملخص متاح لهذا المنشور."
+
+#~ msgid "Self Informations"
+#~ msgstr "معلومات شخصية"
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "تغيير طريقة إرسال النماذج ، <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\"> تعرف على المزيد حول "
+#~ "طرق الطلب </a>"

@@ -1,4 +1,4 @@
-certifi==2022.9.14
+certifi==2022.9.24
 babel==2.10.3
 flask-babel==2.0.0
 flask==2.2.2
@@ -15,4 +15,4 @@ langdetect==1.0.9
 setproctitle==1.3.2
 redis==4.3.4
 markdown-it-py==2.1.0
-typing_extensions==4.3.0
+typing_extensions==4.4.0

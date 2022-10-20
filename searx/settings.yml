@@ -52,7 +52,7 @@ search:
 
 server:
   # If you change port, bind_address or base_url don't forget to rebuild
-  # instance's enviroment (make buildenv)
+  # instance's environment (make buildenv)
   port: 8888
   bind_address: "127.0.0.1"
   base_url: false  # Possible values: false or "https://example.org/location".
@@ -135,7 +135,7 @@ outgoing:
   request_timeout: 3.0
   # the maximum timeout in seconds
   # max_request_timeout: 10.0
-  # suffix of searx_useragent, could contain informations like an email address
+  # suffix of searx_useragent, could contain information like an email address
   # to the administrator
   useragent_suffix: ""
   # The maximum number of concurrent connections that may be established.
@@ -145,6 +145,11 @@ outgoing:
   pool_maxsize: 20
   # See https://www.python-httpx.org/http2/
   enable_http2: true
+  # uncomment below section if you want to use a custom server certificate
+  # see https://www.python-httpx.org/advanced/#changing-the-verification-defaults
+  # and https://www.python-httpx.org/compatibility/#ssl-configuration
+  #  verify: ~/.mitmproxy/mitmproxy-ca-cert.cer
+  #
   # uncomment below section if you want to use a proxyq see: SOCKS proxies
   #   https://2.python-requests.org/en/latest/user/advanced/#proxies
   # are also supported: see
@@ -183,7 +188,7 @@ outgoing:
 #   # these plugins are enabled if nothing is configured ..
 #   - 'Hash plugin'
 #   - 'Search on category select'
-#   - 'Self Informations'
+#   - 'Self Information'
 #   - 'Tracker URL remover'
 #   - 'Ahmia blacklist'  # activation depends on outgoing.using_tor_proxy
 #   # these plugins are disabled if nothing is configured ..
@@ -319,7 +324,6 @@ engines:
   - name: arxiv
     engine: arxiv
     shortcut: arx
-    categories: science
     timeout: 4.0
 
   # tmp suspended:  dh key too small
@@ -411,23 +415,10 @@ engines:
   #   api_key: 'unset'
 
   - name: crossref
-    engine: json_engine
-    paging: true
-    search_url: https://search.crossref.org/dois?q={query}&page={pageno}
-    url_query: doi
-    title_query: title
-    title_html_to_text: true
-    content_query: fullCitation
-    content_html_to_text: true
-    categories: science
+    engine: crossref
     shortcut: cr
-    about:
-      website: https://www.crossref.org/
-      wikidata_id: Q5188229
-      official_api_documentation: https://github.com/CrossRef/rest-api-doc
-      use_official_api: false
-      require_api_key: false
-      results: JSON
+    timeout: 30
+    disabled: true
 
   - name: yep
     engine: json_engine
@@ -551,6 +542,11 @@ engines:
     engine: duckduckgo_images
     shortcut: ddi
     timeout: 3.0
+    disabled: true
+
+  - name: duckduckgo weather
+    engine: duckduckgo_weather
+    shortcut: ddw
     disabled: true
 
   - name: apple maps
@@ -1063,7 +1059,7 @@ engines:
     title_query: metadata/oaf:entity/oaf:result/title/$
     content_query: metadata/oaf:entity/oaf:result/description/$
     content_html_to_text: true
-    categories: science
+    categories: "science"
     shortcut: oad
     timeout: 5.0
     about:
@@ -1193,7 +1189,6 @@ engines:
   - name: pubmed
     engine: pubmed
     shortcut: pub
-    categories: science
     timeout: 3.0
 
   - name: pypi
@@ -1341,7 +1336,6 @@ engines:
     engine: semantic_scholar
     disabled: true
     shortcut: se
-    categories: science
 
   # Spotify needs API credentials
   # - name: spotify
@@ -1367,8 +1361,7 @@ engines:
   #   # working API key, for test & debug: "a69685087d07eca9f13db62f65b8f601"
   #   api_key: 'unset'
   #   shortcut: springer
-  #   categories: science
-  #   timeout: 6.0
+  #   timeout: 15.0
 
   - name: startpage
     engine: startpage
@@ -1846,6 +1839,11 @@ engines:
       results: HTML
       language: fr
 
+  - name: wttr.in
+    engine: wttr
+    shortcut: wttr
+    timeout: 9.0
+
   - name: brave
     shortcut: brave
     engine: xpath
@@ -2039,10 +2037,7 @@ doi_resolvers:
   doi.org: 'https://doi.org/'
   doai.io: 'https://dissem.in/'
   sci-hub.se: 'https://sci-hub.se/'
-  sci-hub.do: 'https://sci-hub.do/'
-  scihubtw.tw: 'https://scihubtw.tw/'
   sci-hub.st: 'https://sci-hub.st/'
-  sci-hub.bar: 'https://sci-hub.bar/'
-  sci-hub.it.nf: 'https://sci-hub.it.nf/'
+  sci-hub.ru: 'https://sci-hub.ru/'
 
 default_doi_resolver: 'oadoi.org'

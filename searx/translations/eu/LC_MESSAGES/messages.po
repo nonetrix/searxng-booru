@@ -10,19 +10,18 @@
 # beriain <soila@disroot.org>, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: searx\n"
+"Project-Id-Version:  searx\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-04 09:33+0000\n"
+"POT-Creation-Date: 2022-09-28 07:29+0000\n"
 "PO-Revision-Date: 2022-09-11 22:50+0000\n"
 "Last-Translator: beriain <soila@disroot.org>\n"
-"Language-Team: Basque <https://weblate.bubu1.eu/projects/searxng/searxng/eu/>"
-"\n"
 "Language: eu\n"
+"Language-Team: Basque "
+"<https://weblate.bubu1.eu/projects/searxng/searxng/eu/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14\n"
 "Generated-By: Babel 2.10.3\n"
 
 #. CONSTANT_NAMES['DEFAULT_GROUP_NAME']
@@ -130,6 +129,11 @@ msgstr "software wikiak"
 msgid "web"
 msgstr ""
 
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: searx/searxng.msg
+msgid "scientific publications"
+msgstr ""
+
 #. STYLE_NAMES['AUTO']
 #: searx/searxng.msg
 msgid "auto"
@@ -145,68 +149,68 @@ msgstr "argia"
 msgid "dark"
 msgstr "iluna"
 
-#: searx/webapp.py:165
+#: searx/webapp.py:164
 msgid "timeout"
 msgstr "itxarote-denbora"
 
-#: searx/webapp.py:166
+#: searx/webapp.py:165
 msgid "parsing error"
 msgstr "analizatze errorea"
 
-#: searx/webapp.py:167
+#: searx/webapp.py:166
 msgid "HTTP protocol error"
 msgstr "HTTP protokoloaren errorea"
 
-#: searx/webapp.py:168
+#: searx/webapp.py:167
 msgid "network error"
 msgstr "sareko errorea"
 
-#: searx/webapp.py:170
+#: searx/webapp.py:169
 msgid "unexpected crash"
 msgstr "ustekabeko kraskatzea"
 
-#: searx/webapp.py:177
+#: searx/webapp.py:176
 msgid "HTTP error"
 msgstr "HTTP errorea"
 
-#: searx/webapp.py:178
+#: searx/webapp.py:177
 msgid "HTTP connection error"
 msgstr "HTTP konexioaren errorea"
 
-#: searx/webapp.py:184
+#: searx/webapp.py:183
 msgid "proxy error"
 msgstr "proxy-aren errorea"
 
-#: searx/webapp.py:185
+#: searx/webapp.py:184
 msgid "CAPTCHA"
 msgstr "CAPTCHA"
 
-#: searx/webapp.py:186
+#: searx/webapp.py:185
 msgid "too many requests"
 msgstr "eskaera gehiegi"
 
-#: searx/webapp.py:187
+#: searx/webapp.py:186
 msgid "access denied"
 msgstr "sarbidea ukatua"
 
-#: searx/webapp.py:188
+#: searx/webapp.py:187
 msgid "server API error"
 msgstr "API zerbitzariaren errorea"
 
-#: searx/webapp.py:363
+#: searx/webapp.py:362
 msgid "No item found"
 msgstr "Ez da elementurik aurkitu"
 
 #: searx/engines/qwant.py:217
-#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:365
+#: searx/templates/simple/result_templates/images.html:20 searx/webapp.py:364
 msgid "Source"
 msgstr "Iturria"
 
-#: searx/webapp.py:367
+#: searx/webapp.py:366
 msgid "Error loading the next page"
 msgstr "Errorea hurrengo orrialdea kargatzean"
 
-#: searx/webapp.py:518 searx/webapp.py:962
+#: searx/webapp.py:518 searx/webapp.py:950
 msgid "Invalid settings, please edit your preferences"
 msgstr "Ezarpen ez baliodunak, mesedez editatu zure hobespenak"
 
@@ -218,17 +222,17 @@ msgstr "Ezarpen ez baliodunak"
 msgid "search error"
 msgstr "bilaketa akatsa"
 
-#: searx/webapp.py:733
+#: searx/webapp.py:849
+msgid "Suspended"
+msgstr ""
+
+#: searx/webutils.py:161
 msgid "{minutes} minute(s) ago"
 msgstr "duela {minutes} minutu"
 
-#: searx/webapp.py:735
+#: searx/webutils.py:162
 msgid "{hours} hour(s), {minutes} minute(s) ago"
 msgstr "duela {hours} ordu eta {minutes} minutu"
-
-#: searx/webapp.py:861
-msgid "Suspended"
-msgstr ""
 
 #: searx/answerers/random/answerer.py:67
 msgid "Random value generator"
@@ -258,13 +262,15 @@ msgstr "{title} (ZAHARKITUA)"
 msgid "This entry has been superseded by"
 msgstr "Sarrera hau hurrengoarekin ordezkatu da"
 
-#: searx/engines/pubmed.py:78
-msgid "No abstract is available for this publication."
-msgstr "Ez dago abstrakturik eskuragarri argitalpen honetarako."
-
 #: searx/engines/qwant.py:219
 msgid "Channel"
 msgstr "Kanala"
+
+#: searx/engines/semantic_scholar.py:81
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
 
 #: searx/engines/tineye.py:40
 msgid ""
@@ -281,6 +287,22 @@ msgstr ""
 
 #: searx/engines/tineye.py:52
 msgid "The image could not be downloaded."
+msgstr ""
+
+#: searx/engines/wttr.py:101
+msgid "Morning"
+msgstr ""
+
+#: searx/engines/wttr.py:101
+msgid "Noon"
+msgstr ""
+
+#: searx/engines/wttr.py:101
+msgid "Evening"
+msgstr ""
+
+#: searx/engines/wttr.py:101
+msgid "Night"
 msgstr ""
 
 #: searx/plugins/hash_plugin.py:24
@@ -324,7 +346,7 @@ msgstr ""
 "kategoria hautatu ahal izateko. (JavaScript behar du)"
 
 #: searx/plugins/self_info.py:20
-msgid "Self Informations"
+msgid "Self Information"
 msgstr ""
 
 #: searx/plugins/self_info.py:21
@@ -411,8 +433,8 @@ msgid "Powered by"
 msgstr "Honek bultzatua"
 
 #: searx/templates/simple/base.html:64
-msgid "a privacy-respecting, hackable metasearch engine"
-msgstr "pribatutasun-errespetatzaile, metabilaketa motor hackeagarri bat"
+msgid "a privacy-respecting, open metasearch engine"
+msgstr ""
 
 #: searx/templates/simple/base.html:65
 msgid "Source code"
@@ -449,6 +471,7 @@ msgstr "Luzera"
 
 #: searx/templates/simple/macros.html:37
 #: searx/templates/simple/result_templates/images.html:18
+#: searx/templates/simple/result_templates/paper.html:6
 msgid "Author"
 msgstr "Egilea"
 
@@ -668,13 +691,10 @@ msgstr "HTTP metodoa"
 
 #: searx/templates/simple/preferences.html:264
 msgid ""
-"Change how forms are submited, <a "
+"Change how forms are submitted, <a "
 "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
 " rel=\"external\">learn more about request methods</a>"
 msgstr ""
-"Aldatu inprimakiak nola bidaltzen diren, <a "
-"href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
-" rel=\"external\">ikasi gehiago eskaera metodoen inguruan</a>"
 
 #: searx/templates/simple/preferences.html:269
 msgid "Image proxy"
@@ -1076,6 +1096,50 @@ msgstr "mapa erakutsi"
 msgid "hide map"
 msgstr "mapa ezkutatu"
 
+#: searx/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr ""
+
+#: searx/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr ""
+
 #: searx/templates/simple/result_templates/torrent.html:6
 msgid "magnet link"
 msgstr "magnet lotura"
@@ -1379,3 +1443,25 @@ msgstr "ezkutatu bideoa"
 
 #~ msgid "Scores per result"
 #~ msgstr "Balorazioak emaitza bakoitzeko"
+
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "pribatutasun-errespetatzaile, metabilaketa motor hackeagarri bat"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr "Ez dago abstrakturik eskuragarri argitalpen honetarako."
+
+#~ msgid "Self Informations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Aldatu inprimakiak nola bidaltzen diren, "
+#~ "<a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">ikasi gehiago eskaera metodoen"
+#~ " inguruan</a>"
+
